@@ -1,6 +1,5 @@
 package ru.yandex.practikum.model;
-
-import java.util.ArrayList;
+import java.util.List;
 
 public class Order {
     private String firstName;
@@ -11,9 +10,9 @@ public class Order {
     private int rentTime;
     private String deliveryDate;
     private String comment;
-    private ArrayList<String> color;
+    private List<String> color;
 
-    public Order(String firstName, String lastName, String address, String metroStation, String phone, int rentTime, String deliveryDate, String comment, ArrayList<String> color){
+    public Order(String firstName, String lastName, String address, String metroStation, String phone, int rentTime, String deliveryDate, String comment, List<String> color){
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -92,10 +91,10 @@ public class Order {
         this.comment = comment;
     }
 
-    public ArrayList<String> getColor() {
+    public List<String> getColor() {
         return color;
     }
-    public void setColor(ArrayList<String> color) {
+    public void setColor(List<String> color) {
         this.color = color;
     }
 }

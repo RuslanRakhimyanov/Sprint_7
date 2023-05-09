@@ -23,7 +23,7 @@ public class OrderClient extends BaseEndpoint {
     public ValidatableResponse delete(int track) {
         return given()
                 .spec(getBaseReqSpec())
-                .body("{ \"track\": " + track + "}")
+                .queryParam("track", track)
                 .when()
                 .put(BASE_URI + "/api/v1/orders/cancel")
                 .then();
